@@ -1,5 +1,6 @@
 from discord.ext import commands
 from commands import (
+    anime_genres,
     translatetojp,
     serverinfo,
     magazines,
@@ -10,7 +11,8 @@ from commands import (
     random_characters,
     specific_character,
     random_anime,
-    specific_anime
+    specific_anime,
+    manga_genres
 )
 import discord
 
@@ -37,3 +39,5 @@ def sync_cmds(bot):
     bot.add_command(specific_character.get_specific_character)
     bot.add_command(random_anime.get_random_anime)
     bot.add_command(specific_anime.get_specific_anime)
+    bot.add_command(anime_genres.get_anime_genres)
+    bot.add_command(manga_genres.get_manga_genres)

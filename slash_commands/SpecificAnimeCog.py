@@ -76,15 +76,20 @@ class SpecificAnimeCog(commands.Cog):
             # Studios
             studios = ", ".join([s['name']
                                 for s in an.get('studios', [])]) or "N/A"
-            embed.add_field(name="Studios", value=self.truncate(studios), inline=True)
+            embed.add_field(
+                name="Studios", value=self.truncate(studios), inline=True)
 
             # Genres
-            genres = ", ".join([s['name'] for s in an.get('genres', [])]) or "N/A"
-            embed.add_field(name="Genres", value=self.truncate(genres), inline=True)
+            genres = ", ".join([s['name']
+                               for s in an.get('genres', [])]) or "N/A"
+            embed.add_field(
+                name="Genres", value=self.truncate(genres), inline=True)
 
             # Themes
-            themes = ", ".join([s['name'] for s in an.get('themes', [])]) or "N/A"
-            embed.add_field(name="Themes", value=self.truncate(themes), inline=True)
+            themes = ", ".join([s['name']
+                               for s in an.get('themes', [])]) or "N/A"
+            embed.add_field(
+                name="Themes", value=self.truncate(themes), inline=True)
 
             embed.set_footer(
                 text=f"Requested by {user.name}",

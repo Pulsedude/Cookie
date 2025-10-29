@@ -18,7 +18,7 @@ class ServerInfoCog(commands.Cog):
         self.bot = bot
 
     @app_commands.command(name='serverinfo', description='See server info')
-    async def JpTranslation(self, interaction: discord.Interaction, manga: str):
+    async def ServerInfo(self, interaction: discord.Interaction):
         user = interaction.user
 
         icon = interaction.guild.icon.with_size(64)

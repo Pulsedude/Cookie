@@ -23,7 +23,7 @@ class SpecificAnimeCog(commands.Cog):
             return "N/A"
         return text if len(text) <= limit else text[:limit-3] + "..."
 
-    @app_commands.command(name='anime', description='Gee details about any specific anime show')
+    @app_commands.command(name='anime', description='See details about any specific anime show')
     async def GetSpecificAnime(self, interaction: discord.Interaction, name: str):
         """Cog for getting details about any specific anime show
 

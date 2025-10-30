@@ -30,7 +30,7 @@ class AnimeGenresCog(commands.Cog):
         try:
             genres = await anime_genres()
             all_genres = ""
-            for genre in genres['data']:
+            for genre in genres['data'][:25]:
                 all_genres += f"{genre["mal_id"]}. **{genre["name"]}**   [See on MyAnimeList]({genre["url"]})\n"
 
             embed = discord.Embed(

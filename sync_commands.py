@@ -12,7 +12,10 @@ from commands import (
     specific_character,
     random_anime,
     specific_anime,
-    manga_genres
+    manga_genres,
+    top_animes,
+    top_mangas,
+    help
 )
 import discord
 
@@ -24,10 +27,12 @@ intents.message_content = True  # Needed to read message content
 intents.members = True
 
 # Command prefix
-bot = commands.Bot(command_prefix=",", intents=intents)
+bot = commands.Bot(command_prefix=",", intents=intents, help_command=None)
 
 
 def sync_cmds(bot):
+    """Sync all prefix commands
+    """
     bot.add_command(translatetojp.translate_text)
     bot.add_command(serverinfo.server_info)
     bot.add_command(magazines.get_manga_magazines)
@@ -41,3 +46,6 @@ def sync_cmds(bot):
     bot.add_command(specific_anime.get_specific_anime)
     bot.add_command(anime_genres.get_anime_genres)
     bot.add_command(manga_genres.get_manga_genres)
+    bot.add_command(top_animes.top_animes_list)
+    bot.add_command(top_mangas.top_mangas_list)
+    bot.add_command(help.help)

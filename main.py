@@ -16,7 +16,7 @@ intents.message_content = True  # Needed to read message content
 intents.members = True
 
 # Command prefix
-bot = commands.Bot(command_prefix=",", intents=intents)
+bot = commands.Bot(command_prefix=",", intents=intents, help_command=None)
 
 # ----------------------------
 # Bot Events

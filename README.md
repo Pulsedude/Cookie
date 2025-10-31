@@ -20,28 +20,28 @@
 ## 🚀 Commands
 
 ### Anime
-- `/anime_genres`: Get a list of all anime genres.
-- `/random_anime`: Get a random anime recommendation.
-- `/specific_anime [name]`: Get information about a specific anime.
-- `/top_animes`: Get a list of the top-rated anime.
+- `/angenres`: Get a list of all anime genres.
+- `/ranime`: Get a random anime recommendation.
+- `/anime [name]`: Get information about a specific anime.
+- `/topanimes`: Get a list of the top-rated anime.
 
 ### Manga
-- `/manga_genres`: Get a list of all manga genres.
-- `/random_manga`: Get a random manga recommendation.
-- `/specific_manga [name]`: Get information about a specific manga.
-- `/top_mangas`: Get a list of the top-rated manga.
+- `/mgenres`: Get a list of all manga genres.
+- `/rmanga`: Get a random manga recommendation.
+- `/manga [name]`: Get information about a specific manga.
+- `/topmangas`: Get a list of the top-rated manga.
 - `/magazines`: Get a list of manga magazines.
 
 ### Characters
-- `/random_characters`: Get a random character.
-- `/specific_character [name]`: Get information about a specific character.
+- `/rchar`: Get a random character.
+- `/character [name]`: Get information about a specific character.
 
 ### Utility
 - `/help`: Shows a list of all available commands.
 - `/ping`: Checks the bot's latency.
 - `/serverinfo`: Displays information about the server.
 - `/say [message]`: Makes the bot say something.
-- `/jptranslate [text]`: Translates text to Japanese.
+- `/injp [text]`: Translates text to Japanese.
 
 ## 🛠️ Setup
 
